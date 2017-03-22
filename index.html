@@ -55,7 +55,7 @@
       </div>
       <div class="well">
         <h2>Order your plant</h2>
-        <div class="form">
+        <form id="formOrder">
           <div class="form-group">
             <label for="firstName">First name</label>
             <input id="firstName" class="form-control" type="text">
@@ -86,13 +86,13 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="country" value="us" checked>
+              <input type="radio" name="country" value="United States" checked>
               United States
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="country" value="ca">
+              <input type="radio" name="country" value="Canada">
               Canada
             </label>
           </div>
@@ -105,10 +105,15 @@
           </select>
           <br>
           <button type="submit" class="btn btn-info">Place Order</button>
-        </div>
+        </form>
         <div id="receipt">
-          <p>Thank you, <span id="firstName"></span> for your order!</p>
-          <p>Your order will ship in the next 2-3 business days.</p>
+          <p>Thank you for your order, <span id="receiptName"></span> <span id="receiptSurname"></span>!</p>
+          <p>Your <span id="receiptPlant"></span> will ship in the next 2-3 business days.</p>
+          <br>
+          <p>Shipping Address:</p>
+          <p><span id="receiptAddress1"></span> <span id="receiptAddress2"></span></p>
+          <p><span id="receiptCity"></span>, <span id="receiptState"></span> <span id="receiptZip"></span></p>
+          <p><span id="receiptCountry"></span></p>
         </div>
       </div>
     </div>
