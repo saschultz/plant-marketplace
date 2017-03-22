@@ -1,0 +1,14 @@
+
+h1, .panel-heading, .panel-body {
+  text-align: center;
+}
+.panel-body {
+  min-height: 449px;
+}
+p {
+  margin-top: 10px;
+}
+
+img {
+  max-height: 300px;
+}
