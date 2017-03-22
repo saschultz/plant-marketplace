@@ -53,6 +53,60 @@
           </div>
         </div>
       </div>
+      <div class="well">
+        <h2>Order your plant</h2>
+        <div class="form">
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="addressLine1">Street Address</label>
+            <input id="addressLine1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="addressLine2">Apartment, Suite, Unit (optional)</label>
+            <input id="addressLine2" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip or Post Code</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="country" value="us" checked>
+              United States
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="country" value="ca">
+              Canada
+            </label>
+          </div>
+          <label>Plant type:</label>
+          <select class="form-control" id="plant">
+            <option>Orchid</option>
+            <option>Oak Munchkin</option>
+            <option>Cactus</option>
+            <option>Succulent</option>
+          </select>
+          <br>
+          <button type="submit" class="btn btn-info">Place Order</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
